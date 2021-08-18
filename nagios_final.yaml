@@ -1,5 +1,6 @@
 ---
-- hosts: nagios
+- hosts: localhost
+  connection: local
   become_user: root
   tasks: 
   - name: get rid of old installation dir
